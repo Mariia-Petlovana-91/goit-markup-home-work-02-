@@ -1,1 +1,2 @@
-# goit-markup-home-work-02-
+# -goit-markup-hw-02.
+GoIt-HomeWork2-HTML+CSS
