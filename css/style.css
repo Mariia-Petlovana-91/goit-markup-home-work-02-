@@ -1,191 +1,206 @@
 :root {
---hover-focus-color-others: #2196F3;
---hover-focus-color-button:#188ce8;
---logo-color:  #2196F3;
---title-color-hero: #FFFFFF;
---title-color-second: #212121;
---title-color-third: #212121;
---text-color: #757575;
---adres-color-dark: #757575;
---adres-color-light:rgba(255, 255, 255, 0.6);
+  --hover-focus-color-others: #2196f3;
+  --hover-focus-color-button: #188ce8;
+  --logo-color: #2196f3;
+  --title-color-hero: #ffffff;
+  --title-color-second: #212121;
+  --title-color-third: #212121;
+  --text-color: #757575;
+  --contacts-color-dark: #757575;
+  --contacts-color-light: rgba(255, 255, 255, 0.6);
+  --logo-word-dark: #000000;
+  --logo-word-light: #ffffff;
+  --color-text: #ffffff;
 }
-body{
-    font-family: 'roboto',sans-serif;
+body {
+  font-family: "roboto", sans-serif;
 }
-.list{
-    list-style: none;
+.list {
+  list-style: none;
 }
-.link{
-    text-decoration: none;
+.link {
+  text-decoration: none;
 }
-.title-section{
-font-size: 36px;
-line-height: 1.17em;
-text-align: center;
-letter-spacing: 0.03em;
-color:var(--title-color-second);
+.title-section {
+  font-size: 36px;
+  line-height: 1.17em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color-second);
 }
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-  }
-  .logo{font-family:'Raleway',sans-serif ;  
-    font-size: 26px;
-    line-height: 1.19em;
-    letter-spacing: 0.03em;
-    color: var(--logo-color);
-    }
-.logo-word-dark{
-    color: #000000;
-  font-family:'Raleway',sans-serif }
-.logo-word-light{
-    color: #FFFFFF;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
+  color: var(--logo-color);
+}
+.logo-word-dark {
+  color: var(--logo-word-dark);
+}
+.logo-word-light {
+  color: var(--logo-word-light);
+}
+
 /*----------------------------main and portfolio page header ---------------------------*/
-.navigation-item
-{
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14em;
-letter-spacing: 0.02em;
-text-transform: capitalize;
+.navigation-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
-.navigation-item>a:link,.navigation-item>a:visited{
-    color: var(--title-color-third);
+.navigation-item > a:link,
+.navigation-item > a:visited {
+  color: var(--title-color-third);
 }
-.navigation-item>a:hover,.navigation-item>a:focus,.navigation-item>a:active{
-    color:var(--hover-focus-color-others) ;
+.navigation-item > a:hover,
+.navigation-item > a:focus {
+  color: var(--hover-focus-color-others);
 }
-.header-contacts-item{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14em;
-    letter-spacing: 0.02em;
+.navigation-item > a.link.active {
+  color: var(--hover-focus-color-others);
 }
-.header-contacts-item>a:link{
-    color: var(--adres-color-dark);
+.header-contacts-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
 }
-.header-contacts-item>a:hover,.header-contacts-item>a:focus{
-    color: var(--hover-focus-color-others);
+.header-contacts-item > a:link {
+  color: var(--contacts-color-dark);
+}
+.header-contacts-item > a:hover,
+.header-contacts-item > a:focus {
+  color: var(--hover-focus-color-others);
+  /*-------------------------------main page header------------------------------------*/
 }
 /*-----------------------------main page section 1 hero------------------------------*/
-.hero{
-    background-color: #2F303A;
+.hero {
+  background-color: #2f303a;
 }
-.title-hero{
-font-weight: 900;
-font-size: 44px;
-line-height: 1.36em;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color:var(--title-color-hero);
+.title-hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36em;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--title-color-hero);
 }
-.btn-hero{
-font-size: 16px;
-line-height: 1.88em;
-letter-spacing: 0.06em;
-color: #FFFFFF;
-background-color:var(--hover-focus-color-others);
+.btn-hero {
+  font-size: 16px;
+  line-height: 1.88em;
+  letter-spacing: 0.06em;
+  background-color: var(--hover-focus-color-others);
+  color: var(--color-text);
+  font-family: inherit;
 }
-.btn-hero:hover{
-    color: #FFFFFF;
-    background-color: #188ce8;
-}
-.btn-hero:focus{
-    color: #FFFFFF;
-    background-color: #188ce8;
+.btn-hero:hover,
+.btn-hero:focus {
+  color: var(--color-text);
+  background-color: #188ce8;
 }
 /*---------------------------main page section 2 features----------------------*/
-.title-features{
-font-size: 14px;
-line-height: 1.14em;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color:var(--title-color-third);
+.title-features {
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color-third);
 }
-.features-text{
-font-size: 14px;
-line-height: 1.71em;
-letter-spacing: 0.03em;
-color:var(--text-color);
+.features-text {
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
 }
 /*--------------------------main page section 4 oue team---------------------------*/
-.our-team-title{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19em;
-    letter-spacing: 0.03em;
-    color:var(--title-color-third); 
+.our-team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
+  color: var(--title-color-third);
 }
-.our-team-text{
- font-size: 16px;
- line-height: 1.19em;
- letter-spacing: 0.03em;
-color:var(--text-color);
+.our-team-text {
+  font-size: 16px;
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
 }
 /*--------------------------------main and portfolio footer-------------------*/
-.vault{
-background-color: #2F303A;;
+.vault {
+  background-color: #2f303a;
 }
-.google-address{
-font-size: 14px;
-line-height: 1.71tm;
-letter-spacing: 0.03em;
+.all-contacts-vault {
+  font-style: normal;
 }
-.google-address>a.link{
-    color: #FFFFFF;
+.google-address {
+  font-size: 14px;
+  line-height: 1.71tm;
+  letter-spacing: 0.03em;
 }
-.google-address>a:hover,.google-address>a:focus{
-    color: var(--hover-focus-color-others);
+.vault-item > a.link.google-address {
+  color: var(--color-text);
 }
-.vault-item{
-font-size: 14px;
-line-height: 1.71em;
-letter-spacing: 0.03em;
-
+.vault-item > a.link.google-address:hover,
+.vault-item > a.link.google-address:focus {
+  color: var(--hover-focus-color-others);
 }
-.vault-item>a:link{
-    color: var(--adres-color-light);
+.vault-item {
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
 }
-.vault-item>a:hover,.vault-item>a:focus{
-    color: var(--hover-focus-color-others);
+.vault-item > a:link {
+  color: var(--contacts-color-light);
+}
+.vault-item > a:hover,
+.vault-item > a:focus {
+  color: var(--hover-focus-color-others);
 }
 /*-----------------------------portfolio section 1 button----------------------------*/
-.btn{
-font-weight: 500;
-font-size: 16px;
-line-height: 1.63em;
-text-align: center;
-letter-spacing: 0.03em;
-color:var(--title-color-third);
-text-transform: capitalize;
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color-third);
+  text-transform: capitalize;
+  font-family: inherit;
 }
-.btn:hover,.btn-hero:focus{
-    background-color: var(--hover-focus-color-others);
-    color: #FFFFFF;
+.btn:hover,
+.btn:focus {
+  background-color: var(--hover-focus-color-others);
+  color: var(--color-text);
 }
 /*-------------------------portfolio section 2 projects--------------------------------*/
-.title-project{
-font-size: 18px;
-line-height: 2em;
-letter-spacing: 0.06em;
-color:var(--title-color-third);
+.title-project {
+  font-size: 18px;
+  line-height: 2em;
+  letter-spacing: 0.06em;
+  color: var(--title-color-third);
 }
-.item-project{
-    text-transform: capitalize; 
+.item-project {
+  text-transform: capitalize;
 }
-.text-project{
-font-size: 16px;
-line-height: 1.88em;
-letter-spacing: 0.03em;
-color:var(--text-color);
+.text-project {
+  font-size: 16px;
+  line-height: 1.88em;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
 }
