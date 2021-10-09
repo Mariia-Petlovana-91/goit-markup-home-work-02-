@@ -58,10 +58,10 @@ line-height: 1.14em;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 }
-.navigation-item>a:link{
+.navigation-item>a:link,.navigation-item>a:visited{
     color: var(--title-color-third);
 }
-.navigation-item>a:hover,.navigation-item>a:focus{
+.navigation-item>a:hover,.navigation-item>a:focus,.navigation-item>a:active{
     color:var(--hover-focus-color-others) ;
 }
 .header-contacts-item{
